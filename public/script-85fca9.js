@@ -52,7 +52,7 @@ if('IntersectionObserver' in window){var so=new IntersectionObserver(function(es
 
 /* Book Appointment -> inline form -> clinic WhatsApp (replace CLINIC_WA with real number) */
 (function(){
- var CLINIC_WA="918978999677";
+ var CLINIC_WA="910000000000";
  var f=document.getElementById("bkForm"); if(!f) return;
  var F=f.elements, err=document.getElementById("bkErr");
  var d=F["date"]; d.min=new Date().toISOString().slice(0,10);
