@@ -7,8 +7,11 @@ export default function Footer() {
           <div className="fgrid">
             <div>
               <a href="#home" className="brand">
-                <b>Dr. Sowmya&apos;s</b>
-                <small>Skin, Hair &amp; Laser Clinic</small>
+                <img className="brand-mark" src="/img/logo-mark-light.png" alt="" width="48" height="48" />
+                <span className="brand-tx">
+                  <b>Dr. Sowmya&apos;s</b>
+                  <small>Skin, Hair &amp; Laser Clinic</small>
+                </span>
               </a>
               <p>Advanced skin, hair and laser care by Dr. Sowmya Kothamasu, M.D. (DVL).</p>
               <div className="fsoc">

@@ -976,3 +976,23 @@ section#locations .locB .lb-ic svg{width:26px!important;height:26px!important}
 /* v39 hero cta fit mobile */
 @media(max-width:600px){.hero .cta{gap:12px!important}.hero .cta .btn-rose{padding:14px 22px!important;letter-spacing:.6px!important}.hero .cta .btn-line{letter-spacing:.6px!important;padding:6px 0!important}}
 @media(max-width:380px){.hero .cta .btn-rose{padding:13px 16px!important;font-size:10.5px!important}.hero .cta .btn-line{font-size:10.5px!important}}
+
+/* polish: readability + 320px fit (mobile only, no design change) */
+@media (max-width:760px){
+ .sA .brand small,.sA .nav .brand small,.sA footer .brand small{font-size:10px!important}
+ .sA .hero .eyebrow{font-size:12px!important}
+ .sA .dr-badge small,.sA .crow small,.sA .building .dir,.bk-eye,.git .lc-when,.locs .lc-when{font-size:12px!important}
+}
+@media (max-width:360px){
+ html body .hero .cta{gap:8px!important}
+ html body .hero .cta a.btn-rose{padding:0 8px!important;font-size:11.5px!important;letter-spacing:.02em!important;gap:5px!important}
+ html body .hero .cta a.btn-line[href="#treatments"]{padding:6px 2px!important;font-size:11.5px!important;letter-spacing:.02em!important;gap:5px!important}
+}
+#bkErr a{color:inherit;text-decoration:underline}
+
+/* logo mark beside the brand text */
+html body .sA .brand,html body .topA .brand{flex-direction:row!important;align-items:center;gap:10px}
+.brand-tx{display:flex;flex-direction:column;line-height:1}
+.brand-mark{width:44px;height:44px;object-fit:contain;flex:none}
+footer .brand-mark{width:48px;height:48px}
+@media (max-width:760px){.brand-mark{width:38px;height:38px}}

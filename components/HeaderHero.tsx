@@ -6,8 +6,11 @@ export default function HeaderHero() {
         <div className="nav-in">
           {" "}
           <a href="#home" className="brand" aria-label={"Dr. Sowmya's Skin, Hair & Laser Clinic"}>
-            <b>Dr. Sowmya&apos;s</b>
-            <small>Skin, Hair &amp; Laser Clinic</small>
+            <img className="brand-mark" src="/img/logo-mark.png" alt="" width="44" height="44" />
+            <span className="brand-tx">
+              <b>Dr. Sowmya&apos;s</b>
+              <small>Skin, Hair &amp; Laser Clinic</small>
+            </span>
           </a>
           {" "}
           <nav aria-label="Main">
@@ -52,7 +55,7 @@ export default function HeaderHero() {
           <div className="blob" style={{ width: "380px", height: "380px", background: "var(--blob2)", left: "28%", bottom: "-160px" }} />
           <div className="hero-frame" />
           <figure className="hero-photo">
-            <img src="/img/dsc08982.jpg" alt="Dr. Sowmya Kothamasu at the clinic reception" fetchPriority="high" />
+            <img src="/img/dsc08982.jpeg" alt="Dr. Sowmya Kothamasu at the clinic reception" fetchPriority="high" />
           </figure>
           <div className="wrap">
             <div className="hero-copy">

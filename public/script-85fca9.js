@@ -60,7 +60,7 @@ if('IntersectionObserver' in window){var so=new IntersectionObserver(function(es
  window.addEventListener("click",function(e){ var a=e.target.closest&&e.target.closest("a"); if(a&&/book\s*appointment/i.test(a.textContent)){ e.preventDefault(); e.stopImmediatePropagation(); var m=document.getElementById("mnav"); if(m) m.classList.remove("open");
    var nav=document.querySelector(".topA .nav"); var off=(nav?nav.offsetHeight:70)+20; var _c=document.querySelector("#contact .sec-head")||document.getElementById("book"); var y=_c.getBoundingClientRect().top+scrollY-off; window.scrollTo({top:y,behavior:"smooth"}); setTimeout(function(){F["name"].focus({preventScroll:true})},700); } },true);
  f.addEventListener("submit",function(e){
-  e.preventDefault(); err.textContent="";
+  e.preventDefault(); err.textContent=""; err.style.color="";
   var n=F["name"].value.trim(), p=F["phone"].value.replace(/\D/g,""), dt=F["date"].value;
   if(!n){err.textContent="Please add your name.";return;}
   if(p.length<10){err.textContent="Please add a valid phone number.";return;}
@@ -76,7 +76,9 @@ if('IntersectionObserver' in window){var so=new IntersectionObserver(function(es
        });
      Comment only for now: no Supabase package, no keys, no network call.
      ───────────────────────────────────────────────────────────────────── */
- window.open("https://wa.me/"+CLINIC_WA+"?text="+encodeURIComponent(t),"_blank");
+ var wu="https://wa.me/"+CLINIC_WA+"?text="+encodeURIComponent(t);
+ window.open(wu,"_blank");
+ err.style.color="#2F6B4F"; err.textContent="Thank you! Opening WhatsApp with your details. If it did not open, "; var la=document.createElement("a"); la.href=wu; la.target="_blank"; la.rel="noopener"; la.textContent="tap here"; err.appendChild(la); err.appendChild(document.createTextNode("."));
  });
 })();
 
